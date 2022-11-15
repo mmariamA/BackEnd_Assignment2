@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <%const firstName = 'Mariam'%>
+        <%const lastName = 'Akokhia'%>
+        <h2><%= firstName + " " + lastName%></h2>
+        <%if(details.length > 0){%>
+            <% details.map((detail)=>{%>
+         <h2>Score: <span>
+            <%= detail.score%>
+        </span></h2>
+         <h2>State: <span>
+            <%= detail.state%>
+        </span></h2>
+         <h2>Nationality: <span>
+            <%= detail.nationality%>
+        </span></h2>
+        <% })%>
+    <%} else {%>
+        <h3>No details to show</h3>
+   <% }%>
+    </div>
+</body>
+</html>

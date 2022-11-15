@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.container{
+    margin-top: 5em;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgb(148, 81, 148);
+    box-shadow: rgba(180, 46, 131, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+h2{
+    padding: .5em;
+}
+.container > h2:first-child{
+    margin-top: 1.5em;
+}
